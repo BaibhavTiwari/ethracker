@@ -12,7 +12,7 @@ When working with Ethereum, developers and users often need to check transaction
 
 ## Solution
 Build a **Web3-powered terminal tool** that:
-1. Connects to the Ethereum blockchain via a node provider (e.g., Infura, Alchemy, or a local node).
+1. Connects to the Ethereum blockchain via a node provider (Infura).
 2. Accepts a transaction hash as input.
 3. Fetches and displays transaction details in a clean, readable format directly in the terminal.
 
@@ -32,7 +32,7 @@ Build a **Web3-powered terminal tool** that:
 
 ## How It Works
 1. The user runs the tool from the terminal and provides a transaction hash as input.
-2. The tool connects to an Ethereum node using a Web3 library (e.g., Web3.js or Ethers.js).
+2. The tool connects to an Ethereum node using a Web3 library (Web3.js)
 3. It fetches the transaction details using the `getTransaction` method.
 4. The retrieved data is formatted and displayed in the terminal.
 
@@ -41,29 +41,31 @@ Build a **Web3-powered terminal tool** that:
 ## Example Workflow
 1. User runs the tool:
    ```bash
-   eth-tx-details 0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
+   node index.js 0x27d80c179b717c4192157c32cb6fd657dd8a1d72de5f6a4eb5b3264eb0154ecc
    ```
 2. Tool outputs:
-   ```
-   Transaction Details:
-   -------------------
-   Hash: 0x1234567890abcdef1234567890abcdef1234567890abcdef1234567890abcdef
-   Block Number: 12345678
-   From: 0xSenderAddress
-   To: 0xReceiverAddress
-   Value: 0.1 ETH
-   Gas: 21000
-   Gas Price: 50 Gwei
-   Nonce: 5
-   Input Data: 0x...
-   ```
+```
+┌──────────────────┬───────────────────────────────────────────┐
+│     (index)      │                   Values                  │
+├──────────────────┼───────────────────────────────────────────┤
+│       Hash       │ '0x1234...'                               │
+│   Block Number   │ 12345678                                  │
+│       From       │ '0xSenderAddress'                         │
+│        To        │ '0xReceiverAddress'                       │
+│      Value       │ '0.1 ETH'                                 │
+│       Gas        │ 21000                                     │
+│    Gas Price     │ '50 Gwei'                                 │
+│      Nonce       │ 5                                         │
+│    Input Data    │ '0x...'                                   │
+└──────────────────┴───────────────────────────────────────────┘
+```
 
 ---
 
 ## Technical Stack
 1. **Programming Language**: JavaScript (Node.js)
-2. **Web3 Libraries**: Web3.js or Ethers.js
-3. **Ethereum Node Provider**: Infura, Alchemy, or a local node
+2. **Web3 Libraries**: Web3.js 
+3. **Ethereum Node Provider**: Infura
 4. **Command-Line Interface**: Node.js with `process.argv` or a library like `commander` for advanced CLI features.
 
 ---
@@ -77,8 +79,7 @@ Build a **Web3-powered terminal tool** that:
    - Extend the tool to work with Ethereum-compatible chains like Binance Smart Chain, Polygon, or Avalanche.
 4. **Interactive Mode**:
    - Add an interactive mode where users can input multiple transaction hashes or search for transactions by address.
-5. **Pretty Printing**:
-   - Use libraries like `chalk` to colorize the output for better readability.
+
 
 ---
 
