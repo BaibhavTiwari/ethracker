@@ -58,6 +58,15 @@ Build a **Web3-powered terminal tool** that:
 │      Nonce       │ 5                                         │
 │    Input Data    │ '0x...'                                   │
 └──────────────────┴───────────────────────────────────────────┘
+
+Transaction Receipt:
+┌────────────────────┬───────────┐
+│ (index)            │ Values    │
+├────────────────────┼───────────┤
+│ Transaction Status │ 'Success' │
+│ Contract Address   │ 'N/A'     │
+│ Logs Count         │ 0         │
+└────────────────────┴───────────┘
 ```
 
 ---
