@@ -117,8 +117,3 @@ While the tool itself can be open-source, you could explore monetization options
 
 ## Inspiration
 This idea is inspired by the need for more developer-focused tools in the Web3 ecosystem. By creating a simple yet powerful terminal tool, you can empower developers to interact with the blockchain more efficiently and build a foundation for more advanced Web3 utilities.
-
----
-
-## Call to Action
-If you're passionate about Web3 and want to contribute to the ecosystem, this project is a great starting point. Build it, share it with the community, and watch it grow into a valuable tool for Ethereum developers worldwide! 🚀
